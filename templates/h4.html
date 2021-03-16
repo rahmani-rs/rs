@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operation by using jinja tag</title>
+</head>
+<body>
+    {% if a > b %}
+        {% if a > c %}
+            <h2>inside inner if block</h2>
+            <h2>{{a}} is greater</h2>
+        {% else %}
+            <h2>inside inner else block</h2>
+            <h2>{{c}} is greater</h2>
+        {% endif %}
+    {% else %}
+        {% if b > c %}
+            <h2>inside inner else if</h2>
+            <h2>{{b}} is greater</h2>
+        {% else %}
+            <h2>inside inner else</h2>
+            <h2>{{c}} is greater</h2>
+        {% endif %}
+    {% endif %}
+
+        
+</body>
+</html>

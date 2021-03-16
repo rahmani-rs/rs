@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operational jinja tag</title>
+</head>
+<body>
+    {% if a > b and a > c %}
+        <h2>inside if block</h2>
+        <h2> {{a }}is greater</h2>
+    {% elif b > c %}
+        <h2>inside elif block</h2>
+        <h2>{{b}} id greater</h2>
+    {% else %}
+        <h2>inside else block</h2>
+        <h2>{{c}} is greater</h2>
+    {% endif %}
+</body>
+</html>
